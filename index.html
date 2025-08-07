@@ -11,14 +11,109 @@
     <meta name="keywords" content="coffee shop" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Spots | Dakz</title>
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <img src="images/Logo.svg" alt="header-logo" class="header__logo" />
+      </header>
       <main class="content">
-        <section class="profile"></section>
-        <section class="cards"></section>
+        <section class="profile">
+          <div class="profile__card">
+            <img
+              src="images/avatar.jpg"
+              alt="profile image"
+              class="profile__image"
+            />
+            <div class="profile__info">
+              <div class="profile__info_text">
+                <h1 class="profile__name">Bessie Coleman</h1>
+                <p class="profile__description">Civil Aviator</p>
+              </div>
+              <button class="profile__card_button">
+                <img src="images/Group 2.svg" alt="Edit Profile Icon" /> Edit
+                Profile
+              </button>
+            </div>
+          </div>
+          <button class="profile__button">
+            <img src="images/Group 26.svg" alt="button + icon" /> New Post
+          </button>
+        </section>
+        <section class="cards">
+          <ul class="card__list">
+            <li class="card">
+              <img
+                src="images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="mortiz-felmann"
+                class="card__image"
+              />
+              <div class="card__contents">
+                <h2 class="card__title">Val Thorens</h2>
+                <button type="button" class="card__like_btn"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="images/2-photo-by-ceiline-from-pexels.jpg"
+                alt="ceiline"
+                class="card__image"
+              />
+              <div class="card__contents">
+                <h2 class="card__name">Restraunt Terrence</h2>
+                <button type="button" class="card__like_btn"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+                alt="tubanur"
+                class="card__image"
+              />
+              <div class="card__contents">
+                <h2 class="card__name">An Outdoor Cafe</h2>
+                <buttton type="button" class="card__like_btn"></buttton>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="images/4-photo-by-maurice-laschet-from-pexels.jpg"
+                alt="maurice"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__name">
+                  A very long bridge, over the forest...
+                </h2>
+                <button type="button" class="card__like_btn"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+                alt="van-anh"
+                class="card__image"
+              />
+              <div class="card__contents">
+                <h2 class="card__name">Tunnel with morning light</h2>
+                <button type="button" class="card__like_btn"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="moritz-feldmann 2"
+                class="card__image"
+              />
+              <div class="card__contents">
+                <h2 class="card__name">Mountain house</h2>
+                <button type="button" class="card__like_btn"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
