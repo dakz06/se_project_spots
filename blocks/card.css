@@ -30,7 +30,7 @@
   letter-spacing: 0%;
 }
 
-.card__like_btn {
+.card__contents_like_btn {
   width: 23px;
   height: 20px;
   border: none;
@@ -63,7 +63,7 @@
     line-height: 100%;
   }
 
-  .card__like-btn {
+  .card__contents_like_btn {
     width: 23px;
     height: 20px;
   }
