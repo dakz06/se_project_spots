@@ -27,20 +27,17 @@ They have the ability to express thire self as they see fit
 - More features to customize and style your profile, to it give a more personal touch
 - Ways to capture and share moments right in the app, so you can express yourself to your peers without missing a beat
 
-### Overview
+## Overview
 
-- Intro
 - Figma
 - Images
 - Fit Tested
-
-**Intro**
 
 **Figma**
 
 - [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
 
-**Images**
+**Images/Video**
 
 The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
 

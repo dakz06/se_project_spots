@@ -1,5 +1,8 @@
 .card {
   max-width: 413px;
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card__image {
