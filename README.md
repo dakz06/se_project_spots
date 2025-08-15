@@ -8,8 +8,8 @@ Spots | Dakz
 
 ## Project Description:
 
-This web application offers a veriety of advance and innoavive technologiacal features, from different screen sizes and adjustments to reactivity through out the whole app. I have built a systemn that adapts to the users needs weather they are on the go or at home!
-They have the ability to express thire self as they see fit
+This multi-platform web application offers a veriety of advance and innoavive technologiacal features, from different screen sizes and adjustments to reactivity through out the whole app. I have built a systemn that adapts to the users needs weather they are on the go or at home!
+They have the ability to express their self as they see fit
 
 ## Project Features
 
