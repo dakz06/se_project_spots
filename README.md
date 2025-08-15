@@ -17,14 +17,14 @@ They have the ability to express their self as they see fit
 - BEM File Structure
 - CSS3
 - Media Queries
-- Flexgrid and Flexbox Containers
+- Grid and Flexbox Containers
 - Responsive Layout
 - Hover and Color Changing buttons
 
 ## Future Improvments
 
 - Developing a Backend, Using Javascript
-- More features to customize and style your profile, to it give a more personal touch
+- More features to customize and style your profile, like annamations, popups, iframe containers and forms to it give a more personal touch
 - Ways to capture and share moments right in the app, so you can express yourself to your peers without missing a beat
 
 ## Overview
@@ -46,3 +46,5 @@ They have the ability to express their self as they see fit
 ![](./images/screenshot-desktop.png)
 
 **Video**
+
+https://drive.google.com/drive/folders/1APV1-GtOS4Z30-k2HoqbaQwbH9pKeA3e
