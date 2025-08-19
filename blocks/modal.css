@@ -1,0 +1,9 @@
+.modal {
+  margin: 0;
+}
+
+.modal__container {
+  background-color: #fff;
+  max-width: 730px;
+  border-radius: 8px;
+}
