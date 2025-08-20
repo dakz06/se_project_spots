@@ -1,9 +1,131 @@
 .modal {
-  margin: 0;
+  visibility: hidden;
+  background-color: #00000080;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_is-open {
+  visibility: visible;
+  padding: 0 10px;
 }
 
 .modal__container {
+  position: relative;
   background-color: #fff;
   max-width: 730px;
+  width: 100%;
   border-radius: 8px;
+  padding: 32px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  opacity: 40%;
+  border: none;
+  background-color: #fff;
+  padding: 0;
+}
+
+.modal__title {
+  max-width: 169px;
+  font-size: 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  margin: 0;
+  padding-top: 2px;
+}
+
+.modal__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  max-width: 49px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  padding: 1px 0;
+  margin-bottom: 8px;
+  color: #212121b2;
+}
+
+.modal__input {
+  border-radius: 8px;
+  border: 1px #21212166 solid;
+  padding: 16px 12px;
+  margin-bottom: 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.modal__input::placeholder {
+  color: #2121214d;
+}
+
+.modal__submit-button {
+  max-width: 156px;
+  width: 100%;
+  padding: 18px 58px;
+  border-radius: 8px;
+  background-color: #212121;
+  color: #fcf5e5;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  border: none;
+}
+
+@media screen and (max-width: 627px) {
+  .modal__container {
+    max-width: 300px;
+    padding: 12px;
+    gap: 24px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .modal__close-button {
+    top: 12px;
+    right: 12px;
+  }
+
+  .modal__form {
+    width: 100%;
+  }
+
+  .modal__input {
+    margin-bottom: 24px;
+    font-size: 12px;
+  }
+
+  .modal__input::placeholder {
+    font-size: 16px;
+  }
+
+  .modal__submit-button {
+    max-width: 300px;
+    width: 100%;
+  }
 }
