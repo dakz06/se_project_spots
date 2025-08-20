@@ -38,6 +38,10 @@
   padding: 0;
 }
 
+.modal__close-button:hover {
+  opacity: 100%;
+}
+
 .modal__title {
   max-width: 169px;
   font-size: 32px;
@@ -55,7 +59,6 @@
 }
 
 .modal__label {
-  max-width: 49px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -78,6 +81,10 @@
 
 .modal__input::placeholder {
   color: #2121214d;
+}
+
+.modal__input:hover {
+  border: 1px solid #212121;
 }
 
 .modal__submit-button {
