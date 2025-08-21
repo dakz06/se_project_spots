@@ -1,6 +1,8 @@
 .modal {
   visibility: hidden;
   background-color: #00000080;
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -13,6 +15,8 @@
 
 .modal_is-open {
   visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
   padding: 0 10px;
 }
 
