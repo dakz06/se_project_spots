@@ -10,7 +10,7 @@
     />
     <meta name="keywords" content="Spots picture social media webapp" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <title>Spots | Dakz</title>
   </head>
   <body>
@@ -117,68 +117,72 @@
       <footer class="footer">
         <p class="footer__copyright">2025 &copy; Dakota Sternadel</p>
       </footer>
-      <div class="modal modal_is-open">
-        <div class="modal__container">
-          <button type="button" class="modal__close-button">
-            <img
-              src="./images/closing-icon.svg"
-              alt="edit-profile-close-btn"
-              class="modal__close-button-img"
-            />
-          </button>
-          <h2 class="modal__title">Edit Profile</h2>
-          <form class="modal__form">
-            <label for="profile-name-input" class="modal__label">Name</label>
-            <input
-              id="profile-name-input"
-              type="text"
-              class="modal__input"
-              placeholder="Type your name"
-            />
-            <label for="profile-description-input" class="modal__label"
-              >Description</label
-            >
-            <input
-              id="profile-description-input"
-              type="text"
-              class="modal__input"
-              placeholder="Describe yourself"
-            />
-            <button type="submit" class="modal__submit-button">Save</button>
-          </form>
+      <div class="modal">
+        <div class="modal modal_is-open">
+          <div class="modal__container">
+            <button type="button" class="modal__close-button">
+              <img
+                src="./images/closing-icon.svg"
+                alt="edit-profile-close-btn"
+                class="modal__close-button-img"
+              />
+            </button>
+            <h2 class="modal__title">Edit Profile</h2>
+            <form class="modal__form">
+              <label for="profile-name-input" class="modal__label">Name</label>
+              <input
+                id="profile-name-input"
+                type="text"
+                class="modal__input"
+                placeholder="Type your name"
+              />
+              <label for="profile-description-input" class="modal__label"
+                >Description</label
+              >
+              <input
+                id="profile-description-input"
+                type="text"
+                class="modal__input"
+                placeholder="Describe yourself"
+              />
+              <button type="submit" class="modal__submit-button">Save</button>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="modal modal_is-open">
-        <div class="modal__container">
-          <button type="button" class="modal__close-button">
-            <img
-              src="./images/closing-icon.svg"
-              alt="edit-profile-close-btn"
-              class="modal__close-button-img"
-            />
-          </button>
-          <h2 class="modal__title">New Post</h2>
-          <form class="modal__form">
-            <label for="profile-image_link-input" class="modal__label"
-              >Image Link</label
-            >
-            <input
-              id="profile-image_link-input"
-              type="url"
-              class="modal__input"
-              placeholder="Paste a link to the picture"
-            />
-            <label for="profile-caption-input" class="modal__label"
-              >Caption</label
-            >
-            <input
-              id="profile-caption-input"
-              type="url"
-              class="modal__input"
-              placeholder="Type your caption"
-            />
-            <button type="submit" class="modal__submit-button">Save</button>
-          </form>
+      <div class="modal">
+        <div class="modal modal_is-open">
+          <div class="modal__container">
+            <button type="button" class="modal__close-button">
+              <img
+                src="./images/closing-icon.svg"
+                alt="edit-profile-close-btn"
+                class="modal__close-button-img"
+              />
+            </button>
+            <h2 class="modal__title">New Post</h2>
+            <form class="modal__form">
+              <label for="profile-image_link-input" class="modal__label"
+                >Image Link</label
+              >
+              <input
+                id="profile-image_link-input"
+                type="url"
+                class="modal__input"
+                placeholder="Paste a link to the picture"
+              />
+              <label for="profile-caption-input" class="modal__label"
+                >Caption</label
+              >
+              <input
+                id="profile-caption-input"
+                type="url"
+                class="modal__input"
+                placeholder="Type your caption"
+              />
+              <button type="submit" class="modal__submit-button">Save</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
