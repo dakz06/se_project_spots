@@ -22,5 +22,3 @@ newPostButton.addEventListener("click", function () {
 newPostCloseButton.addEventListener("click", function () {
   newPostModal.classList.remove("modal_is-open");
 });
-
-console.log(hello);
