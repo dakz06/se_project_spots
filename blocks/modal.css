@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 
 .modal_is-open {
@@ -18,6 +19,7 @@
   opacity: 1;
   pointer-events: auto;
   padding: 0 10px;
+  transition: opacity 0.5s linear;
 }
 
 .modal__container {
