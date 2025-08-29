@@ -42,6 +42,7 @@
   border: none;
   background-color: #fff;
   padding: 0;
+  cursor: pointer;
 }
 
 .modal__close-button:hover {
@@ -105,6 +106,10 @@
   font-weight: 500;
   line-height: 100%;
   border: none;
+}
+
+.modal__submit-button:hover {
+  background-color: #212121cc;
 }
 
 @media screen and (max-width: 627px) {

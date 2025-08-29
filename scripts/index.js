@@ -23,25 +23,35 @@ const newPostCaptionInput = newPostModal.querySelector(
   "#profile-caption-input"
 );
 
-editProfileButton.addEventListener("click", function () {
+function openModal(modal) {
+  if (!modal) return;
+  modal.classList.add("modal_is-open");
+}
+
+function closeModal(modal) {
+  if (!modal) return;
+  modal.classList.remove("modal_is-open");
+}
+
+editProfileButton.addEventListener("click", () => {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
-  editProfileModal.classList.add("modal_is-open");
+  openModal(editProfileModal);
 });
 
 editProfileCloseButton.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_is-open");
+  closeModal(editProfileModal);
 });
 
 newPostButton.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-open");
+  openModal(newPostModal);
 });
 
 newPostCloseButton.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_is-open");
+  closeModal(newPostModal);
 });
 
-function editProfileSubmittion(evt) {
+function editProfileSubmission(evt) {
   evt.preventDefault();
   const inputProfileValues = {
     name: editProfileNameInput.value,
@@ -50,12 +60,12 @@ function editProfileSubmittion(evt) {
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
 
-  editProfileModal.classList.remove("modal_is-open");
+  closeModal(editProfileModal);
 }
 
-editProfileForm.addEventListener("submit", editProfileSubmittion);
+editProfileForm.addEventListener("submit", editProfileSubmission);
 
-function newPostSubmittion(evt) {
+function newPostSubmission(evt) {
   evt.preventDefault();
   const inputPostValues = {
     link: newPostLinkInput.value,
@@ -64,7 +74,5 @@ function newPostSubmittion(evt) {
   console.log(newPostLinkInput.value);
   console.log(newPostCaptionInput.value);
 
-  newPostModal.classList.remove("modal_is-open");
+  closeModal(newPostModal);
 }
-
-addCardFormEl.addEventListener("submit", newPostSubmittion);
