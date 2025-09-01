@@ -53,10 +53,8 @@ newPostCloseButton.addEventListener("click", function () {
 
 function editProfileSubmission(evt) {
   evt.preventDefault();
-  const inputProfileValues = {
-    name: editProfileNameInput.value,
-    decript: editProfileDescriptionInput.value,
-  };
+  name: editProfileNameInput.value;
+  decript: editProfileDescriptionInput.value;
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
 
@@ -75,4 +73,7 @@ function newPostSubmission(evt) {
   console.log(newPostCaptionInput.value);
 
   closeModal(newPostModal);
+  evt.target.reset();
 }
+
+addCardFormEl.addEventListener("submit", newPostSubmission);
