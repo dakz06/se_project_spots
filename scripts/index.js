@@ -53,8 +53,6 @@ newPostCloseButton.addEventListener("click", function () {
 
 function editProfileSubmission(evt) {
   evt.preventDefault();
-  name: editProfileNameInput.value;
-  decript: editProfileDescriptionInput.value;
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
 
@@ -65,10 +63,6 @@ editProfileForm.addEventListener("submit", editProfileSubmission);
 
 function newPostSubmission(evt) {
   evt.preventDefault();
-  const inputPostValues = {
-    link: newPostLinkInput.value,
-    caption: newPostCaptionInput.value,
-  };
   console.log(newPostLinkInput.value);
   console.log(newPostCaptionInput.value);
 
