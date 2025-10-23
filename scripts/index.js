@@ -1,5 +1,9 @@
 const initialCards = [
   {
+    name: "Golden Gate Bridge",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
+  },
+  {
     name: "Val Thorens",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg",
   },
@@ -43,6 +47,10 @@ const newPostButton = document.querySelector(".profile__post-button");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
 const addCardFormEl = newPostModal.querySelector(".modal__form");
+const previewModalEl = document.querySelector("#preview-modal");
+const closePreviewEl = previewModalEl.querySelector(
+  ".modal__close-button_preview"
+);
 const newPostLinkInput = newPostModal.querySelector(
   "#profile-image_link-input"
 );
