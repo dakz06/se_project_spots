@@ -2,7 +2,6 @@
   max-width: 413px;
   display: block;
   width: 100%;
-  object-fit: cover;
   position: relative;
 }
 
@@ -12,6 +11,11 @@
   object-fit: cover;
   border-radius: 8px;
   display: block;
+  cursor: pointer;
+}
+
+.card__image:hover {
+  opacity: 0.95;
 }
 
 .card__contents {
@@ -53,9 +57,10 @@
   width: 23px;
   height: 20px;
   border: none;
-  opacity: 40%;
+  opacity: 0.4;
   background-image: url(../images/Like_Icon.svg);
   background-color: transparent;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 

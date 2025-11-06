@@ -126,7 +126,7 @@ closePreviewEl.addEventListener("click", function () {
   closeModal(previewModalEl);
 });
 
-function editProfileSubmission(evt) {
+function handleEditProfileSubmit(evt) {
   evt.preventDefault();
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
@@ -134,9 +134,9 @@ function editProfileSubmission(evt) {
   closeModal(editProfileModal);
 }
 
-editProfileForm.addEventListener("submit", editProfileSubmission);
+editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
-function newPostSubmission(evt) {
+function handleNewPostSubmit(evt) {
   evt.preventDefault();
   const inputValues = {
     name: newPostCaptionInput.value,
@@ -149,7 +149,7 @@ function newPostSubmission(evt) {
   evt.target.reset();
 }
 
-addCardFormEl.addEventListener("submit", newPostSubmission);
+addCardFormEl.addEventListener("submit", handleNewPostSubmit);
 
 initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
